@@ -20,8 +20,8 @@ The purpose of this website is to:
 *   **Interactive Elements:** The use of carousels, buttons, and links creates an interactive and engaging user experience.
 *   **Google Calendar Integration:** An embedded calendar shows important dates and events.
 *  **HTTPS**: The website is secured through HTTPS.
-* Clear Layout: The website was edited and adjusted to have a clear, readable, and organized layout so that the users can easily navigate and view the website
-* E-mail link - A clear link to an e-mail sign-up where the user can get information on any new events that Divine Mercy puts on.
+* **Clear Layout**: The website was edited and adjusted to have a clear, readable, and organized layout so that the users can easily navigate and view the website
+* **E-mail link** - A clear link to an e-mail sign-up where the user can get information on any new events that Divine Mercy puts on.
 
 ## Technologies Used
 *   **HTML:** Used to structure the content of the website.
