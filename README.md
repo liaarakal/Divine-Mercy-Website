@@ -1,5 +1,5 @@
 # Divine Mercy Praise and Worship - Website
-View the live website here: [Divine Mercy Website](divinemercypraiseorg.com)
+View the live website here: [Divine Mercy Website](https://www.divinemercypraiseorg.com)
 
 This repository contains the source code for the Divine Mercy Praise and Worship VA website. The website is a hub for information about the community, their initiatives, and ways to get involved.
 
