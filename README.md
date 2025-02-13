@@ -10,6 +10,15 @@ The purpose of this website is to:
 *   Offer a way for people to connect with and support the community.
 *  Provide a way to get people to participate in events and prayer.
 
+## Project Files
+- [Home Page](index.html)
+- [About Us](about-us.html)
+- [Prayer Meetings](monthly-prayer-meeting.html)
+- [Previous Retreat Pictures](previous-retreat-pictures.html)
+- [2025 Retreat Sign-Up](retreat-sign-up.html)
+- [Style Sheet](dvm-style.css)
+- [Script](dvm-script.js)
+
 ## Key Features
 *   **Responsive Design:** The website is designed to be responsive and displays correctly on various screen sizes (desktops, tablets, and mobile devices).
 *   **Navigation:** Easy-to-use navigation allows visitors to move between pages on the website.  Added better navigation on mobile for a better user experience.
@@ -43,12 +52,3 @@ Contributions are always welcome! If you would like to contribute to this projec
 
 ## License
 This project is currently not licensed but is only open source for public viewing.
-
-## Project Files
-- [Home Page](index.html)
-- [About Us](about-us.html)
-- [Prayer Meetings](monthly-prayer-meeting.html)
-- [Previous Retreat Pictures](previous-retreat-pictures.html)
-- [2025 Retreat Sign-Up](retreat-sign-up.html)
-- [Style Sheet](dvm-style.css)
-- [Script](dvm-script.js)
