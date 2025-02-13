@@ -12,10 +12,10 @@ The purpose of this website is to:
 
 ## Project Files
 - [Home Page](index.html)
-- [About Us](about-us.html)
-- [Prayer Meetings](monthly-prayer-meeting.html)
-- [Previous Retreat Pictures](previous-retreat-pictures.html)
-- [2025 Retreat Sign-Up](retreat-sign-up.html)
+- [About Us Page](about-us.html)
+- [Prayer Meetings Page(monthly-prayer-meeting.html)
+- [Previous Retreat Pictures Page](previous-retreat-pictures.html)
+- [2025 Retreat Sign-Up Page](retreat-sign-up.html)
 - [Style Sheet](dvm-style.css)
 - [Script](dvm-script.js)
 
