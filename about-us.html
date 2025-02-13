@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Divine Mercy VA</title>
+    <link rel="stylesheet" href="dvm-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button class="mobile-menu-button" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            <img src="dvmimg.png" alt="Divine Mercy VA Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html" class="active">About Us</a></li>
+                    <li><a href="monthly-prayer-meeting.html">Prayer Meetings</a></li>
+                    <li><a href="previous-retreat-pictures.html">Previous Retreat Pictures</a></li>
+                    <li><a href="retreat-sign-up.html">2025 Retreat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <h1>About Divine Mercy Praise VA</h1>
+            <div class="about-container">
+                <div class="about-content">
+                    <p>Welcome to Divine Mercy Praise and Worship, a vibrant faith community located in Vienna, Virginia, dedicated to fostering spiritual growth, fellowship, and service. For the past 17 years, we have been gathering as a small, faith-oriented group to encounter God's mercy through prayer, worship, and the study of His Word.</p>
+                </div>
+                   <img src="divinemercy.png" alt="Community Gathering at Divine Mercy VA" class="about-image">
+            </div>
+               
+            <section class="who-we-are">
+                <h2>Who We Are</h2>
+                <p>The Divine Mercy Praise Group is a faith community originally rooted in St. Mark Catholic Church and now consisting of individuals and families from various parishes within the Diocese of Arlington, VA, and the surrounding area. We gather monthly at Mount Tabor, located at <strong>2363 Hunter Mill Road, Vienna, VA</strong>, for praise and worship, Bible study, and fellowship.</p>
+            </section>
+
+            <section class="mission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to inspire and empower individuals and families to live out their faith by providing opportunities for communal prayer, heartfelt worship, and transformative retreat experiences. We are committed to spreading the message of God's love and mercy to all while strengthening faith-oriented families and individuals who are dedicated to serving in the Lord's vineyard.</p>
+            </section>
+
+            <section class="values">
+                <h2>Our Values</h2>
+                <ul>
+                    <li><strong>Mercy:</strong> We believe in God's boundless mercy and strive to extend that mercy to others.</li>
+                    <li><strong>Prayer:</strong> Regular, intentional prayer forms the foundation of our spiritual lives.</li>
+                    <li><strong>Worship:</strong> We value heartfelt worship that deepens our relationship with God.</li>
+                    <li><strong>Community:</strong> We foster a welcoming and supportive community where everyone feels valued and connected.</li>
+                    <li><strong>Service:</strong> We are committed to serving others with compassion and love.</li>
+                </ul>
+            </section>
+
+            <section class="get-involved">
+                <h2>Get Involved</h2>
+                <p>We warmly invite you to join us for our gatherings and experience the grace and love of God firsthand. Here are some ways you can get involved:</p>
+                <ul>
+                    <li>Attend our <strong>Monthly Praise and Worship Sessions</strong> at Mount Tabor.</li>
+                    <li>Participate in our <strong>annual retreat</strong> for spiritual renewal.</li>
+                    <li>Join our <strong>daily prayer line</strong> to stay connected in prayer.</li>
+                    <li>Volunteer in our <strong>outreach programs</strong> to serve the community.</li>
+                </ul>
+                <p>Your prayers and support are essential to help us grow in faith and devotion. For more information and to view our calendar and schedule, we encourage you to connect with us. Together, let us continue to grow in faith and share the message of God's infinite love and mercy.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> infoto@divinemercypraiseva.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                     <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="mailto:infoto@divinemercypraiseva.org">Contact</a></li>
+                </ul>
+            </div>
+             <div class="footer-section">
+                <h3>Sign Up for Email Updates</h3>
+                <p>Stay informed about our latest news and events!</p>
+                 <a href="https://forms.gle/5TvLSCS3oxNGLbxh9" class="social-link" target="_blank">
+                    <i class="fas fa-envelope"></i> Subscribe
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/divinemercyva" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Divine Mercy Praise and Worship, VA USA © <span id="current-year"></span></p>
+        </div>
+    </footer>
+    <script src="dvm-script.js"></script>
+      <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

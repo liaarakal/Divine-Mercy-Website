@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Retreat Pictures - Divine Mercy VA</title>
+    <link rel="stylesheet" href="dvm-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button class="mobile-menu-button" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            <img src="dvmimg.png" alt="Divine Mercy VA Logo" class="logo">
+            <nav>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="monthly-prayer-meeting.html">Prayer Meetings</a></li>
+                     <li><a href="previous-retreat-pictures.html" class="active">Previous Retreat Pictures</a></li>
+                    <li><a href="retreat-sign-up.html">2025 Retreat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Previous Retreat Pictures</h1>
+            <div class="year-buttons">
+                <button class="year-button" data-year="2020">2020 Retreat</button>
+                <button class="year-button" data-year="2023">2023 Retreat</button>
+                <button class="year-button" data-year="2024">2024 Retreat</button>
+            </div>
+             <div class="gallery-container" id="gallery-container">
+                <div class="gallery" data-year="2020">
+                     <img src="2020retreat1.jpeg" alt="2020 Retreat 1">
+                     <img src="2020retreat2.jpeg" alt="2020 Retreat 2">
+                      <img src="2020retreat6.jpeg" alt="2020 Retreat 3">
+                       <img src="2020retreat7.jpeg" alt="2020 Retreat 4">
+                        <img src="2020retreat33.jpeg" alt="2020 Retreat 5">
+                    
+                </div>
+                 <div class="gallery" data-year="2023">
+                     <img src="2023retreat1.jpeg" alt="2023 Retreat 1">
+                     <img src="2023retreat2.jpeg" alt="2023 Retreat 2">
+                      <img src="2023retreat3.jpeg" alt="2023 Retreat 3">
+                       <img src="2023retreat4.jpeg" alt="2023 Retreat 4">
+                        <img src="2023retreat5.jpeg" alt="2023 Retreat 5">
+                        <img src="2023retreat6.jpeg" alt="2023 Retreat 5">
+                </div>
+                <div class="gallery" data-year="2024">
+                  <img src="2024retreat1.jpeg" alt="2024 Retreat 1">
+                     <img src="2024retreat2.jpeg" alt="2024 Retreat 2">
+                      <img src="IMG_7044.jpg" alt="2024 Retreat 3">
+                       <img src="IMG_7046.jpg" alt="2024 Retreat 4">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> infoto@divinemercypraiseva.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                     <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="mailto:infoto@divinemercypraiseva.org">Contact</a></li>
+                </ul>
+            </div>
+             <div class="footer-section">
+                <h3>Sign Up for Email Updates</h3>
+                <p>Stay informed about our latest news and events!</p>
+                 <a href="https://forms.gle/5TvLSCS3oxNGLbxh9" class="social-link" target="_blank">
+                    <i class="fas fa-envelope"></i> Subscribe
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/divinemercyva" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Divine Mercy Praise and Worship, VA USA © <span id="current-year"></span></p>
+        </div>
+    </footer>
+    <script src="dvm-script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,704 @@
+/* Overall Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #94a3b8;
+    --primary-light: #e2e8f0;
+    --accent: #7393b3;
+    --accent-light: #d5e3f0;
+    --text: #334155;
+    --text-light: #64748b;
+    --background: #f8fafc;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    height: 45px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+     transition: all 0.3s ease;
+}
+
+nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--accent-light);
+    color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 2rem 3rem;
+    background-image: url("frontpage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: var(--white);
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     background: linear-gradient(120deg, rgba(115, 147, 179, 0.25), rgba(148, 163, 184, 0.25));
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+   font-size: 3rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Daily Prayer Section */
+.daily-prayer-cta {
+    background-color: var(--accent-light);
+    padding: 2rem;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.daily-prayer-cta h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.daily-prayer-cta p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-light);
+    color: var(--accent);
+}
+
+/* Initiatives Section */
+.initiatives {
+    padding: 4rem 2rem;
+    background-color: var(--white);
+}
+
+.initiatives h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text);
+}
+
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.initiative-content {
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.image-slider {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+.prev-image,
+.next-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.prev-image {
+    left: 1rem;
+}
+
+.next-image {
+    right: 1rem;
+}
+
+.prev-image:hover,
+.next-image:hover {
+    background-color: var(--accent-light);
+    color: var(--accent);
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.prev-slide-button,
+.next-slide-button {
+    background-color: var(--accent-light);
+    color: var(--accent);
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.prev-slide-button:hover,
+.next-slide-button:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--accent);
+    transform: scale(1.2);
+}
+
+/* Calendar Section */
+.calendar {
+    padding: 4rem 2rem;
+    background-color: var(--background);
+}
+
+.calendar h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--text);
+}
+
+.calendar-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.calendar-container iframe {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-light);
+    color: var(--text);
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--accent);
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--primary);
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container{
+        flex-direction: column;
+        align-items: flex-start;
+         position: relative;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         background-color: var(--white);
+         padding: .5rem;
+          border-bottom: 1px solid var(--primary);
+          justify-content: center;
+    }
+
+   nav ul.show{
+       display: flex;
+   }
+    
+    .hero {
+        padding: 5rem 1rem 2.5rem;
+          min-height: 400px;
+            text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+
+     .daily-prayer-cta {
+      padding: 1rem;
+    }
+   .daily-prayer-cta h2{
+        font-size: 1.5rem;
+    }
+
+    .daily-prayer-cta p {
+        font-size: 1rem;
+    }
+    
+    .initiative-content {
+        padding: 1rem;
+    }
+    
+    .image-slider {
+        height: 300px;
+    }
+        .mobile-menu-button {
+          display: none; /* Hidden by default */
+          position: absolute;
+           top: 10%;
+           right: 1rem;
+           border: none;
+          background: none;
+            cursor: pointer;
+         color: var(--text);
+          font-size: 1.5rem;
+          z-index: 100;
+        }
+}
+
+/* Additional Aesthetic Improvements */
+.initiative-content h3 {
+    color: var(--accent);
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.initiative-content p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Smooth transitions */
+.carousel-slide,
+.image-slider img,
+nav ul li a,
+.dot,
+.prev-image,
+.next-image,
+.prev-slide-button,
+.next-slide-button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* About Us Page Styles */
+main {
+    padding-top: 70px; /* Adjust this value as needed */
+}
+
+.content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.flyer-container{
+    max-width: 750px;
+      margin: auto;
+       text-align: center;
+}
+
+.retreat-flyer {
+max-width: 100%; /* Make sure it's not wider than container */
+height: auto; /* Maintain aspect ratio */
+object-fit: contain;
+display: inline-block;
+margin: auto;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--accent);
+    margin-bottom: 2rem;
+}
+
+.content p {
+        font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.content h2 {
+    color: var(--accent);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content ul li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.2rem; /* Space for the checkmark or bullet */
+    color: var(--text-light);
+}
+
+.content ul li::before{
+    content: "\2022"; /* Unicode for a bullet point */
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 2;
+    min-width: 300px;
+    order: 1; /* Ensure text appears first */
+}
+
+.about-image {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    order: 2; /* Ensure image appears second */
+}
+
+/* Previous Retreat Pictures Page Styles */
+.year-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.year-button {
+    background-color: var(--accent-light);
+    color: var(--accent);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.year-button:hover,
+.year-button.active {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+.gallery-container {
+    display: block;
+    margin-top: 2rem;
+}
+
+.gallery {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery.active {
+    display: flex;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+      object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+@media(max-width: 768px){
+   .gallery img {
+    max-width: 100%;
+        }
+}
+
+/* Mobile Integration*/
+.mobile-menu-button {
+          display: none; /* Hidden by default */
+            position: absolute;
+           top: 10%;
+           right: 1rem;
+           border: none;
+          background: none;
+            cursor: pointer;
+         color: var(--text);
+          font-size: 1.5rem;
+          z-index: 100;
+        }
+        
+    @media (max-width: 768px){
+        nav ul{
+            display: none;
+        }
+        .mobile-menu-button {
+           display: flex; /* Show only on mobile */
+       }
+
+        /*About me*/
+        .about-container {
+            flex-direction: column;
+        }
+
+        .about-content {
+            flex: 2;
+            min-width: 100%;
+            order: 2; /* Ensure text appears first */
+        }
+
+        .about-image {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            order: 1; /* Ensure image appears second */
+        }
+
+}
+
+ /* Retreat Announcement Section */
+.retreat-announcement {
+    padding: 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.retreat-announcement h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.retreat-announcement img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.retreat-announcement p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.retreat-announcement .button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.retreat-announcement .button:hover {
+    background-color: var(--accent-light);
+    color: var(--accent);
+}

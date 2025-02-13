@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Prayer Meeting - Divine Mercy VA</title>
+    <link rel="stylesheet" href="dvm-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <button class="mobile-menu-button" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+            <img src="dvmimg.png" alt="Divine Mercy VA Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="monthly-prayer-meeting.html" class="active">Prayer Meetings</a></li>
+                    <li><a href="previous-retreat-pictures.html">Previous Retreat Pictures</a></li>
+                    <li><a href="retreat-sign-up.html">2025 Retreat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <h1>Join Us In Prayer!</h1>
+            <h2>Monthly Prayer Meeting</h2>
+            <p>We gather on the third Saturday of every month at Mount Tabor (2363 Hunter Mill Road) at 6PM for bible study, the divine mercy chaplet, and praise and worship, followed by dinner and fellowship!</p>
+            <h2>Weekly Prayer Call</h2>
+            <p>As a member of St. Mark's Small Communities of Faith, join us every Wednesday from 8 to 9PM EST for bible study and intercessory prayer by calling 605-475-4842 and entering the code 699026. Note it may ask you to announce your name, please ignore this request.</p>
+            <h2>Daily Prayer Call</h2>
+            <p>Join us every evening from 9 to 9:15PM EST for the divine mercy chaplet and intercessory prayer by calling 605-475-4842 and entering the code 699026. Note it may ask you to announce your name, please ignore this request.</p>
+            <h4> Please view the calendar below to see when our next meeting is, and join us in prayer!</h4>
+                <div class="calendar-container">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=617dff3cb882bb4712e608ddf7ef22e9d2d6e644f956624f301724b899c562b8%40group.calendar.google.com&ctz=America%2FNew_York"
+                        frameborder="0"
+                        scrolling="no">
+                    </iframe>
+                </div>
+        
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> infoto@divinemercypraiseva.org</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                     <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="mailto:infoto@divinemercypraiseva.org">Contact</a></li>
+                </ul>
+            </div>
+             <div class="footer-section">
+                <h3>Sign Up for Email Updates</h3>
+                <p>Stay informed about our latest news and events!</p>
+                 <a href="https://forms.gle/5TvLSCS3oxNGLbxh9" class="social-link" target="_blank">
+                    <i class="fas fa-envelope"></i> Subscribe
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/divinemercyva" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Divine Mercy Praise and Worship, VA USA © <span id="current-year"></span></p>
+        </div>
+    </footer>
+    <script src="dvm-script.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
