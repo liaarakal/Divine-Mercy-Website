@@ -43,3 +43,12 @@ Contributions are always welcome! If you would like to contribute to this projec
 
 ## License
 This project is currently not licensed but is only open source for public viewing.
+
+## Project Files
+- [Home Page](index.html)
+- [About Us](about-us.html)
+- [Prayer Meetings](monthly-prayer-meeting.html)
+- [Previous Retreat Pictures](previous-retreat-pictures.html)
+- [2025 Retreat Sign-Up](retreat-sign-up.html)
+- [Style Sheet](dvm-style.css)
+- [Script](dvm-script.js)
